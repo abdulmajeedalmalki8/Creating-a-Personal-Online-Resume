@@ -1,0 +1,60 @@
+#e-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+    background-color: black;
+}
+
+.dep1 {
+    background-color: gray;
+    color: black;
+    text-align: center;
+    height: 670px; 
+    width: 375px; 
+}
+
+.dep2 {
+    background-color: darkgray;
+    color: black;
+    text-align: left;
+    height: 670px; 
+    width: 1135px; 
+}
+
+h2 {
+    text-decoration: underline;
+    color: darkblue;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+
+@media (max-width: 992px) {
+    #e-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .dep1, .dep2 {
+        width: auto; 
+        height: auto; 
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .dep1 {
+        height: auto; 
+    }
+
+    .dep2 {
+        height: auto; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .dep1, .dep2 {
+        height: 500px; 
+    }
+}
